@@ -1,0 +1,35 @@
+//Kth smallest element
+/*
+    Approach: 
+    1/ sort the array increasing order. O(nlogn)
+    2/ ans=arr[k-1]
+    or,
+    Approach 2:
+    1/ Create a max heap for first k index
+    2/ then for rest of the elements, if element < heap.top()
+        heap.pop();
+        heap.push(element)
+*/
+#include<bits/stdc++.h>
+using namespace std;
+
+int Kthsmallest(int arr[], int l, int r, int k)
+{
+    priority_queue<int>pq;
+    for(int i=0; i<k; i++)
+    {
+        pq.push(arr[i]);
+    }
+
+    for(int i=k; i<r; i++)
+    {
+        if(arr[i]<pq.top())
+        {
+            pq.pop();
+            pq.push(arr[i]);
+        }
+    }
+
+    int ans=pq.top();
+    return ans;
+}
