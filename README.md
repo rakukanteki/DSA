@@ -43,3 +43,14 @@ Types of linked lists:
 2. Double Linked List. (Can traverse forward and backward both)
 3. Circular Linked List.
 4. Doubly Circular Linked List.
+
+### Hashing:
+Say we have data or a list of data, if we apply a hash function on that data then the function returns an integer value called 'token' or 'index'.  
+This index or token is later used in a HASH TABLE. After that when we want to search for a value from a humungous dataset, then we get that data with a complexity of O(1).
+
+#### Working of Hash Function:
+Say we have a value 'march 6', now we will find the ASCII value for each of the characters in the value. 'm'=109, 'a'=97, 'r'=114, 'c'=99,'h'=104, ' '=32, '6'=54. Then we add the values, we get 'SUM = 609'.
+Now, to get an index from 609 from 0-9. We use 'mod' operation. 609 mod 10 = 9. Hence, the index of 'march 6' == 9.
+
+
+
