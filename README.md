@@ -53,7 +53,8 @@ Say we have a value 'march 6', now we will find the ASCII value for each of the 
 Now, to get an index from 609 from 0-9. We use the 'mod' operation. 609 mod 10 = 9. Hence, the index of 'March 6' == 9.
 
 #### Collision in Hash Function:
-Collision occurs when we get the same index for different values. For handling the collision, 1. we can do separate chaining. This means, instead of storing the value as usual.
+Collision occurs when we get the same index for different values. For handling the collision,
+1. we can do separate chaining. This means, instead of storing the value as usual.
 we store a linked list or Python list at every location. We keep appending the values. Hence, multiple keys can share the same hash value. Big O Notation might go O(n).
 
 2. The second approach we can do is "Linear Probing". When we find an index that has already a value stored in it, we go to the next available location. Say,
