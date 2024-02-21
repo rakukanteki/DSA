@@ -58,6 +58,4 @@ Collision occurs when we get the same index for different values. For handling t
 we store a linked list or Python list at every location. We keep appending the values. Hence, multiple keys can share the same hash value. Big O Notation might go O(n).
 
 2. The second approach we can do is "Linear Probing". When we find an index that has already a value stored in it, we go to the next available location. Say,
-'march 6' has index 9 and when 'march 17' has also index 9 comes in, 'march 17' sees that there is already 'march 6' in that place. So, 'march 17' goes to the next index means the 10th index.
-
-If 'march 17' doesn't find any 10th location then it goes to the beginning means 0th index and keeps on looking for the next empty index.
+'march 6' has index 9 and when 'march 17' has also index 9 comes in, 'march 17' sees that there is already 'march 6' in that place. So, 'march 17' goes to the next index means the 10th index. If 'march 17' doesn't find any 10th location then it goes to the beginning means 0th index and keeps on looking for the next empty index.
