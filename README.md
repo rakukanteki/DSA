@@ -50,7 +50,13 @@ This index or token is later used in a HASH TABLE. After that when we want to se
 
 #### Working of Hash Function:
 Say we have a value 'march 6', now we will find the ASCII value for each of the characters in the value. 'm'=109, 'a'=97, 'r'=114, 'c'=99,'h'=104, ' '=32, '6'=54. Then we add the values, we get 'SUM = 609'.
-Now, to get an index from 609 from 0-9. We use 'mod' operation. 609 mod 10 = 9. Hence, the index of 'march 6' == 9.
+Now, to get an index from 609 from 0-9. We use the 'mod' operation. 609 mod 10 = 9. Hence, the index of 'March 6' == 9.
 
+#### Collision in Hash Function:
+Collision occurs when we get the same index for different values. For handling the collision, 1. we can do separate chaining. This means, instead of storing the value as usual.
+we store a linked list or Python list at every location. We keep appending the values. Hence, multiple keys can share the same hash value. Big O Notation might go O(n).
 
+2. The second approach we can do is "Linear Probing". When we find an index that has already a value stored in it, we go to the next available location. Say,
+'march 6' has index 9 and when 'march 17' has also index 9 comes in, 'march 17' sees that there is already 'march 6' in that place. So, 'march 17' goes to the next index means the 10th index.
 
+If 'march 17' doesn't find any 10th location then it goes to the beginning means 0th index and keeps on looking for the next empty index.
