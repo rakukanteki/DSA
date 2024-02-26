@@ -63,3 +63,9 @@ we store a linked list or Python list at every location. We keep appending the v
 #### Binary Tree:
 - Why we use it?
   In Python, there is a list like thing called "set". When we use set, it removes the duplicate   items. Now one of the internal working of this, is done by BINARY SEARCH TREE.
+  There are two ways we can search through the BST:
+  1. Breadth First Search.
+  2. Depth First Search.
+     - In Order Traversal.
+     - Pre Order Traversal.
+     - Post Order Traversal.
