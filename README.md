@@ -66,6 +66,6 @@ we store a linked list or Python list at every location. We keep appending the v
   There are two ways we can search through the BST:
   1. Breadth First Search.
   2. Depth First Search.
-     - In Order Traversal.
-     - Pre Order Traversal.
-     - Post Order Traversal.
+     - In Order Traversal. (Left->Root->Right)
+     - Pre Order Traversal. (Root->Left->Right)
+     - Post Order Traversal. (Left->Right->Root)
