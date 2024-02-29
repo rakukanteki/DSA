@@ -69,3 +69,5 @@ we store a linked list or Python list at every location. We keep appending the v
      - In Order Traversal. (Left->Root->Right)
      - Pre Order Traversal. (Root->Left->Right)
      - Post Order Traversal. (Left->Right->Root)
+     - 
+#### Graph:
